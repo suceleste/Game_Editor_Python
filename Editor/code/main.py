@@ -2,6 +2,8 @@
 import pygame, sys
 from settings import *
 from editor import Editor
+
+
 class Main:
 	def __init__(self):
 		pygame.init()
