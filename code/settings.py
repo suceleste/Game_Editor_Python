@@ -1,0 +1,5 @@
+# settings.py
+WINDOW_WIDTH = 1080
+WINDOW_HEIGHT = 620
+TILE_SIZE = 64
+LINE_COLOR = 'black'
