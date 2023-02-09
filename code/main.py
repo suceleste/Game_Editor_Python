@@ -19,9 +19,10 @@ class Main:
 				Launch The Game'''
 		while True :
 
-			deltaTime = self.clock.tick() / 1000
+			deltaTime = self.clock.tick(FPS) / 1000
+			print(deltaTime)
 
-			self.game.run()
+			self.game.run(deltaTime)
 			pygame.display.update()
 
 if __name__ == '__main__':

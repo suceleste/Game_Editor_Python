@@ -12,6 +12,7 @@ class Editor:
 		self.pan_active = False
 		self.origin = vector(64,0)
 		self.offset = vector()
+
 		self.support_lines =pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
 		self.support_lines.set_colorkey('green')
 		self.support_lines.set_alpha(30)
@@ -57,7 +58,7 @@ class Editor:
 		self.display_surface.blit(self.support_lines, (0,0))
 
 
-	def run(self):
+	def run(self, dt):
 		self.event_loop()
 		self.draw_lines()
 		pygame.draw.circle(self.display_surface, 'red', self.origin, 5)

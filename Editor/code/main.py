@@ -15,10 +15,10 @@ class Main:
 
 	def run(self):
 		while True :
-			deltaTime = self.Clock.tick() // 1000
+			deltaTime = self.Clock.tick(24)
 
 			self.display_surface.fill('gray')
-			self.editor.run()
+			self.editor.run(deltaTime)
 			pygame.display.update()
 
 if __name__ == '__main__':

@@ -64,7 +64,7 @@ class Game:
         self.display_surface.blit(self.support_line_surf, (0,0))
     
 
-    def run(self):
+    def run(self, dt):
         ''' Main Function Run '''
         # World Settings and Display Origin=(0,0)World
         self.display_surface.fill('Gray')
@@ -72,6 +72,6 @@ class Game:
         pygame.draw.circle(self.display_surface, 'red', self.origin, 10)
 
         self.player.display(self.display_surface)
-        self.player.movement(self.origin)
+        self.player.movement(self.origin, dt)
         self.event_loop()
 
