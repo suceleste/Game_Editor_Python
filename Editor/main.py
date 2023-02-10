@@ -1,6 +1,6 @@
 # main.py 
 import pygame, sys
-from settings import *
+from ..code import settings
 from editor import Editor
 
 
@@ -15,7 +15,7 @@ class Main:
 
 	def run(self):
 		while True :
-			deltaTime = self.Clock.tick(24)
+			deltaTime = self.Clock.tick(FPS)
 
 			self.display_surface.fill('gray')
 			self.editor.run(deltaTime)

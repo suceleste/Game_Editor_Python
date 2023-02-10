@@ -20,7 +20,6 @@ class Main:
 		while True :
 
 			deltaTime = self.clock.tick(FPS) / 1000
-			print(deltaTime)
 
 			self.game.run(deltaTime)
 			pygame.display.update()
